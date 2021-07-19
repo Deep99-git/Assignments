@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="email.js"></script>
+        <link rel="stylesheet" href="email.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1>Send Email</h1><br><br>
+            <form method="POST">
+                <label>Your E-mail : </label>
+                <input type="text" id="Yemail" class="field" placeholder="Your E-mail"><br><br>
+                <label>Receiver's E-mail : </label>
+                <input type="text" id="Remail" class="field" placeholder="Receiver's E-mail"><br><br>
+                <label>Subject : </label>
+                <input type="text" id="sub" class="field" placeholder="Subject"><br><br>
+                <label>Body : </label>
+                <input type="text" id="body" class="field" placeholder="Body"><br><br>
+                <input type="button" onclick="email()" id="btn" value="Send">
+            </form>
+        </div>
+    </body>
+</html>
