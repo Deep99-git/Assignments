@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="tip.js"></script>
+        <link rel="stylesheet" href="tip.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Your Bill</h2>
+            <div class="in">
+                <b> Total Bill</b> (in ₹):<input type="number" class="total" id="total"><br><br>
+                <b>Rate Service:</b> <select id="rate">
+                    <option value="Select" selected>Select</option>
+                    <option value="Excellent ">  Excellent</option>
+                    <option value="Good"> Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Below Avg">Below Avg</option>
+                    <option value="poor">Poor</option>
+                </select><br><br>
+
+                <b>Number Of People</b> <input id="NOP" type="number" max="10" min="1"><br><br>
+                <button value="Calculate" class="btn" onclick="tip_calculator()">Calculate Tip</button>
+            </div>
+        </div>
+    </body>
+</html>
+
