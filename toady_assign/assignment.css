@@ -1,0 +1,87 @@
+.s1:hover{
+    background-color: turquoise;
+    font-weight: bold;
+    font-size: 25px;
+}
+.s2:hover{
+    background-color: thistle;
+    font-weight:bold;
+    font-style: italic;
+    font-size: 35px;
+}
+.s3:hover{
+    background-color: teal;
+    font-weight: bold;
+    color:wheat;
+    font-size: 35px;
+}
+.s4:hover{
+    background-color: cornflowerblue;
+    font-weight: bold;
+    color: red;
+    font-size: 35px;
+}
+.s1{
+    font-size: 25px;
+}
+.s2{
+    font-size: 25px;
+}
+.s3{
+    font-size: 25px;
+}
+.s4{
+    font-size: 25px;
+}
+
+.container{
+    display:flex;
+    height: 600px;
+    column-gap: 100px;
+    max-width: 100%;
+    column-width: 300px;
+    background-color: wheat;
+}
+.one{
+    width: 500px;
+    height: 500px;
+    background-color: ivory;
+    border: 3px solid black;
+    margin: 30px;
+    padding: 20px;
+    max-width: 100%;
+}
+.two{
+    width: 500px;
+    height: 500px;
+    background-color: ivory;
+    border: 3px solid black;
+    margin: 30px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.three{
+    width: 500px;
+    height: 500px;
+    background-color: ivory;
+    border: 3px solid black;
+    margin: 30px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+#btn{
+    font-size: 25px;
+    font-weight: bold;
+    color: royalblue;
+    border: 2px solid black;
+    background: linear-gradient(to left, grey,white);
+}
+#btn:hover{
+    background: linear-gradient(to right, grey, white);
+}
+.top{
+    background-color: darkseagreen;
+}
+
