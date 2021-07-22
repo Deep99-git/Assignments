@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <script>
+            var s
+            function start(){
+                s = setInterval(rott,1)
+            }
+            var val=0
+            function rott()
+            {
+                val=val+1;
+                document.getElementById('image').style.webkitTransform="rotate("+val+"deg)";
+                
+            }
+           
+            function stop(){
+                setTimeout(function(){clearTimeout(s)},1000)
+            }
+        </script>
+        <img id="image" src="super.png" width="500px">
+        <button id="btn" ondblclick="start()">Start</button>
+        <button id="btn" onclick="stop()">Stop</button>
+    </body>
+</html>
