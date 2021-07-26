@@ -12,7 +12,7 @@
                 <h1>MouseOver & MouseOut</h1>
                 <img src="img3.jpg" onmouseover="big(this)" onmouseout="normal(this)"width="300px" height="300px">
             </div>
-            <div class="two">
+            <div class="one">
                 <h1>Hover</h1>
                 <p><span class="s1">JavaScript is the world's most popular programming language.</span>
 
@@ -23,11 +23,31 @@
                     <span class="s4">This tutorial will teach you JavaScript from basic to advanced.</span></p>
             </div>
             
-            <div class="three">
+            <div class="one">
                 <h1>Change image on double click and back in onclick</h1>
                 <img src="img1.jpg" id="image" width="300px" height="340px"><br><br>
                 <Button id="btn" ondblclick="show()">Change Image</Button>
                 <button id="btn" onclick="document.getElementById('image').src='img1.jpg'">Change Back</button>
+            </div>
+        </div><br>
+        
+        <div class="second" id="second">
+            <p id="para" style="font-size: 25px;"> This page is to demonstrate various html events. HTML has the ability to let events
+                trigger actions in a browser, like starting a JavaScript when a user clicks on an
+                element. Some of the events like - onclick, ondblclick, hover, onmouseover, etc.
+            </p>
+            <button id="btn" onclick="change()">Change</button>
+        </div>
+
+        <div class="third">
+            <h2>Want to see this section? Than <a onclick="show_four()" class="anchor"><span style="color: blue;">Click Me</span></a> or button below.</h2>
+            <button id="btn" onclick="show_four()">Show Me</button>
+            <div class="four" id="four" style="display: none;">
+                <div class="flo"><img src="img3.jpg" width="100%" ></div>
+                <div class="flo"><img src="img1.jpg" width="100%" ></div>
+                <div class="flo"><img src="img2.jpg" width="100%" ></div>
+                <h2>Want to hide above section? Than <a onclick="hide_four()" class="anchor"><span style="color: blue;">Click Me</span></a> or button below.</h2>
+                <button id="btn" onclick="hide_four()">Hide</button>
             </div>
         </div>
     </body>
