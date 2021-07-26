@@ -40,7 +40,7 @@
     column-gap: 100px;
     max-width: 100%;
     column-width: 300px;
-    background-color: wheat;
+    background-color: cadetblue;
 }
 .one{
     width: 500px;
@@ -51,28 +51,9 @@
     padding: 20px;
     max-width: 100%;
 }
-.two{
-    width: 500px;
-    height: 500px;
-    background-color: ivory;
-    border: 3px solid black;
-    margin: 30px;
-    padding: 20px;
-    max-width: 100%;
-}
-
-.three{
-    width: 500px;
-    height: 500px;
-    background-color: ivory;
-    border: 3px solid black;
-    margin: 30px;
-    padding: 20px;
-    max-width: 100%;
-}
 
 #btn{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     color: royalblue;
     border: 2px solid black;
@@ -83,5 +64,18 @@
 }
 .top{
     background-color: darkseagreen;
+}
+
+.third{
+    background-color: rgb(231, 208, 77);
+    height: 600%;
+    width: 100%;
+}
+.flo{
+    width: 33%;
+    padding: 5px;
+}
+.anchor{
+    cursor: pointer;
 }
 
