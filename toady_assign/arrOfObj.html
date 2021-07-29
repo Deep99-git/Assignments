@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        .container{overflow: hidden}
-        .tab{float: left;}
-        .tab-2{margin-left: 50px}
-        .tab-2 input{display: block;margin-bottom: 10px}
-        tr{transition:all .25s ease-in-out}
-        tr:hover{background-color:#EEE;cursor: pointer}
-    </style>
-    <body>
-        <div class="container">
-            <div class="tab tab-1">
-                <table id="table" border="1">
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Age</th>
-                    </tr>
-                    <tr>
-                        <td>A1</td>
-                        <td>B1</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                </table>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+    <title>Document</title>
+</head>
+<body>
+    <table class="table" id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Mobile No.</th>
+                <th>Customize</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <form>
+        <div class="form-group">
+            <h2 class="first-heading">Add new entry</h2>
+            <div>
+                Name :<input type="text" id="name" class="form-control">
             </div>
-            <div class="tab tab-2">
-                First Name :<input type="text" name="fname" id="fname">
-                Last Name :<input type="text" name="lname" id="lname">
-                Age :<input type="text" name="age" id="age">
-                
-                <button onclick="addRow();">Add</button>
-                <button onclick="editSelectedRow();">Edit</button>
-                <button onclick="removeSelectedRow();">Remove</button>
+            <div>
+                Age :<input type="text" id="age" class="form-control">
             </div>
-        </div>
-    </body>
-    <script src="Aoo.js"></script>
+            <div>
+                Country :<input type="text" id="con" class="form-control">
+            </div>
+            <div>
+                Mobile No. :<input type="text" id="num" class="form-control"><br>
+            </div>
+                <button type="button" class="btn btn-primary form-control" onclick="addRow()">Add</button>
+        </div><br>
+    </form>
+    <button class="btn btn-primary" type="button" onclick="populate()">Get Data</button>
+</body>
+<script src="Aoo.js"></script>
 </html>
